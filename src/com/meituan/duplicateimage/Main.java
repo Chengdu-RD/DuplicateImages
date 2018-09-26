@@ -12,6 +12,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
+        // TODO xiayong 解压apk文件，遍历apk中的路径
         System.out.println("请输入需要处理的路径，不输入回车默认为当前目录：");
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         String str;
