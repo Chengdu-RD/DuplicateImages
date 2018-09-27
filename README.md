@@ -10,13 +10,13 @@
 
 该效果图是基于我们部门真实的项目试验得出的！
 
-![1](/Users/xiayong/AndroidStudioProjects/DuplicateImages/samples/1.png)
+![1](./samples/1.png)
 
-![2](/Users/xiayong/AndroidStudioProjects/DuplicateImages/samples/2.png)
+![2](./samples/2.png)
 
-![3](/Users/xiayong/AndroidStudioProjects/DuplicateImages/samples/3.png)
+![3](./samples/3.png)
 
-![4](/Users/xiayong/AndroidStudioProjects/DuplicateImages/samples/4.png)
+![4](./samples/4.png)
 
 ## 3、使用方式
 
@@ -28,7 +28,7 @@
 
 4. 成功运行Main.java后，会在Terminal中让你输入apk的路径和apk反编译的输出路径，例如：
 
-![5](/Users/xiayong/AndroidStudioProjects/DuplicateImages/samples/5.png)
+![5](./samples/5.png)
 
 5. 点击回车过一会儿便会在项目根目录下生成similar.md文件，记录着该apk中的相似图片。
 
