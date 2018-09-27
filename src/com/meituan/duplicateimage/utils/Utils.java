@@ -3,6 +3,7 @@ package com.meituan.duplicateimage.utils;
 import org.apache.commons.io.FilenameUtils;
 
 import java.io.*;
+import java.util.Collection;
 
 public class Utils {
 
@@ -29,5 +30,9 @@ public class Utils {
     public static String getFilenameWithoutExtension(File file){
         int l = FilenameUtils.indexOfExtension(file.getName());
         return l == -1 ? "" : file.getName().substring(0,l);
+    }
+
+    public static boolean isCollectionEmpty(Collection collection){
+        return collection == null || collection.isEmpty();
     }
 }

@@ -7,11 +7,9 @@ import java.util.List;
 
 public class Finder {
     private List<ImageComparer> mImageComparers;
-    private List<List<ImageFile>> mResults;
 
     public Finder() {
         mImageComparers = new ArrayList<>();
-        mResults = new ArrayList<>();
     }
 
     public void addComparers(ImageComparer... imageComparers) {
@@ -20,12 +18,13 @@ public class Finder {
         }
     }
 
-    public void start(List<ImageFile> images) {
+    public List<List<ImageFile>> start(List<ImageFile> images) {
         if (images == null || images.size() == 0) {
-            return;
+            return null;
         }
         System.out.println("====================开始查找相似图片======================");
         List<ImageFile> files = new ArrayList<>();
+        List<List<ImageFile>> mResults = new ArrayList<>();
         boolean[] checked = new boolean[images.size()];
         for (int i = 0; i < images.size(); i++) {
             if (checked[i]) {
@@ -44,6 +43,7 @@ public class Finder {
             }
         }
         System.out.println("====================结束查找相似图片======================");
+        return mResults;
     }
 
     private boolean isSimilarImage(ImageFile img1, ImageFile img2) {
