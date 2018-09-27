@@ -3,6 +3,8 @@ package com.meituan.duplicateimage;
 import com.meituan.duplicateimage.apktool.ApkUtils;
 import com.meituan.duplicateimage.bean.ImageFile;
 import com.meituan.duplicateimage.finder.Finder;
+import com.meituan.duplicateimage.finder.SizeComparer;
+import com.meituan.duplicateimage.finder.pHashComparer;
 import com.meituan.duplicateimage.markdown.MarkdownGenerator;
 import com.meituan.duplicateimage.scanner.FileScanner;
 import com.meituan.duplicateimage.utils.Utils;
@@ -21,6 +23,8 @@ public class Main {
         String[] imgPaths = ApkUtils.getApkImagesPath(apkDir, outDir);
         if (imgPaths != null) {
             Finder finder = new Finder();
+            finder.addComparers(new SizeComparer(), new pHashComparer());
+
             Map<String, List<List<ImageFile>>> allSimilarImgs = new HashMap<>();
             for (String path : imgPaths) {
                 FileScanner fileScanner = new FileScanner(path);
