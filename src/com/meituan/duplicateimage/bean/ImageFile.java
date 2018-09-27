@@ -5,7 +5,7 @@ import java.io.File;
 /**
  * 一个对象对应一个图片文件
  */
-public class Image {
+public class ImageFile {
     public String name;
     public File mFile;
     public String mHash;//pHash算法生成的hash值
@@ -13,7 +13,7 @@ public class Image {
     public int mHeight;
     public int mWidth;
 
-    public Image(final File file) {
+    public ImageFile(final File file) {
         mFile = file;
         if (!mFile.exists()) {
             throw new IllegalArgumentException("input file does not exist,please check the path");

@@ -1,8 +1,8 @@
 package com.meituan.duplicateimage.finder;
 
-import com.meituan.duplicateimage.bean.Image;
+import com.meituan.duplicateimage.bean.ImageFile;
 
 public interface ImageComparer {
 
-    boolean isSimilar(Image img1,Image img2);
+    boolean isSimilar(ImageFile img1, ImageFile img2);
 }

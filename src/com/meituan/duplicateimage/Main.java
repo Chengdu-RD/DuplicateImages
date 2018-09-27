@@ -1,8 +1,6 @@
 package com.meituan.duplicateimage;
 
 import com.meituan.duplicateimage.apktool.ApkUtils;
-import com.meituan.duplicateimage.bean.Image;
-import com.meituan.duplicateimage.scanner.FileScanner;
 import com.meituan.duplicateimage.utils.Utils;
 
 import java.util.List;
@@ -18,7 +16,7 @@ public class Main {
 
 //        System.out.println("选择的目录是：" + path);
 //        FileScanner fileScanner = new FileScanner(path);
-//        List<Image> result = fileScanner.scan();
+//        List<ImageFile> result = fileScanner.scan();
 
     }
 }

@@ -1,6 +1,6 @@
 package com.meituan.duplicateimage.scanner;
 
-import com.meituan.duplicateimage.bean.Image;
+import com.meituan.duplicateimage.bean.ImageFile;
 
 import java.io.File;
 import java.util.*;
@@ -10,14 +10,14 @@ public class FileScanner {
     private String[] mSuffix = new String[]{".png", ".jpg"};
     public String mPath;
 
-    private List<Image> mImages;
+    private List<ImageFile> mImages;
 
     public FileScanner(String path) {
         mPath = path;
         mImages = new ArrayList<>();
     }
 
-    public List<Image> scan() {
+    public List<ImageFile> scan() {
         System.out.println("正在扫描当前文件夹...");
         scan(mPath);
         System.out.print("\r");
@@ -38,7 +38,7 @@ public class FileScanner {
             } else {
                 for (int i = 0; i < mSuffix.length; i++) {
                     if (root.getName().endsWith(mSuffix[i])) {
-                        Image file = new Image(root);
+                        ImageFile file = new ImageFile(root);
                         mImages.add(file);
                     }
                 }

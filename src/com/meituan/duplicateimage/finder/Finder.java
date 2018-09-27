@@ -1,13 +1,13 @@
 package com.meituan.duplicateimage.finder;
 
-import com.meituan.duplicateimage.bean.Image;
+import com.meituan.duplicateimage.bean.ImageFile;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Finder {
     private List<ImageComparer> mImageComparers;
-    private List<List<Image>> mResults;
+    private List<List<ImageFile>> mResults;
 
     public Finder() {
         mImageComparers = new ArrayList<>();
@@ -20,12 +20,12 @@ public class Finder {
         }
     }
 
-    public void start(List<Image> images) {
+    public void start(List<ImageFile> images) {
         if (images == null || images.size() == 0) {
             return;
         }
         System.out.println("====================开始查找相似图片======================");
-        List<Image> files = new ArrayList<>();
+        List<ImageFile> files = new ArrayList<>();
         boolean[] checked = new boolean[images.size()];
         for (int i = 0; i < images.size(); i++) {
             if (checked[i]) {
@@ -46,7 +46,7 @@ public class Finder {
         System.out.println("====================结束查找相似图片======================");
     }
 
-    private boolean isSimilarImage(Image img1, Image img2) {
+    private boolean isSimilarImage(ImageFile img1, ImageFile img2) {
         for (ImageComparer imageComparer : mImageComparers) {
             if (!imageComparer.isSimilar(img1, img2)) {
                 return false;
