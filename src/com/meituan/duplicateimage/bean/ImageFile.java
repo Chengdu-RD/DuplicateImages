@@ -1,5 +1,7 @@
 package com.meituan.duplicateimage.bean;
 
+import com.meituan.duplicateimage.utils.HashCodeUtils;
+
 import java.io.File;
 
 /**
@@ -19,13 +21,8 @@ public class ImageFile {
             throw new IllegalArgumentException("input file does not exist,please check the path");
         }
         name = mFile.getName();
-        mHash = getHashCode();
+        mHash = HashCodeUtils.getInstance().getHash(mFile);
         mHistogramData = getHistogramData();
-    }
-
-    private String getHashCode() {
-        //TODO xiayong
-        return "";
     }
 
     private float[] getHistogramData() {

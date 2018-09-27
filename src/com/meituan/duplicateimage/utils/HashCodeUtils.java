@@ -5,6 +5,8 @@ import java.awt.*;
 import java.awt.color.ColorSpace;
 import java.awt.image.BufferedImage;
 import java.awt.image.ColorConvertOp;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.InputStream;
 
 /**
@@ -15,7 +17,20 @@ public class HashCodeUtils {
     private int size = 32;
     private int smallerSize = 8;
 
-    public HashCodeUtils() {
+    private static HashCodeUtils sInstance;
+
+    public static HashCodeUtils getInstance() {
+        synchronized (HashCodeUtils.class) {
+            if (sInstance == null) {
+                synchronized (HashCodeUtils.class) {
+                    sInstance = new HashCodeUtils();
+                }
+            }
+        }
+        return sInstance;
+    }
+
+    private HashCodeUtils() {
         initCoefficients();
     }
 
@@ -35,6 +50,15 @@ public class HashCodeUtils {
         }
         return counter;
     }
+
+    public String getHash(File file) {
+        try {
+            return getHash(new FileInputStream(file));
+        } catch (Exception e) {
+            return "";
+        }
+    }
+
 
     // Returns a 'binary string' (like. 001010111011100010) which is easy to do a hamming distance on.
     public String getHash(InputStream is) throws Exception {
