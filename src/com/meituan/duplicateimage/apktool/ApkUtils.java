@@ -5,6 +5,7 @@ import brut.androlib.ApkDecoder;
 import brut.directory.DirectoryException;
 import com.meituan.duplicateimage.utils.Utils;
 import javafx.collections.transformation.FilteredList;
+import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.FilenameUtils;
 
 import java.io.File;
@@ -36,14 +37,23 @@ public class ApkUtils {
         try {
             File decodeDir = new File(outDir + File.separator + Utils.getFilenameWithoutExtension(apkFile));
             if (decodeDir.exists()) {
-                decodeDir.delete();
+                FileUtils.deleteDirectory(decodeDir);
             }
             decoder.setOutDir(decodeDir);
             decoder.decode();
             String resFile = out.getAbsolutePath() + File.separator + Utils.getFilenameWithoutExtension(apkFile) + File.separator + "res";
-            return (new File(resFile)).list((dir, name) -> name.startsWith("drawable") || name.startsWith("mipmap"));
+            return listPathes(new File(resFile));
         } catch (AndrolibException | IOException | DirectoryException e) {
             return null;
         }
+    }
+
+    private static String[] listPathes(File rootFolder) {
+        String[] result = rootFolder.list((dir, name) -> dir.isDirectory() && name.startsWith("drawable") || name.startsWith("mipmap"));
+        final String root = rootFolder.getAbsolutePath() + File.separator;
+        for (int i = 0; result != null && i < result.length; i++) {
+            result[i] = root + result[i];
+        }
+        return result;
     }
 }

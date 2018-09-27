@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f3caef3-11b9-47fa-981b-0c03f2d74a69" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/meituan/duplicateimage/bean/ImageFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/meituan/duplicateimage/bean/ImageFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/meituan/duplicateimage/utils/HashCodeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/meituan/duplicateimage/utils/HashCodeUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/similar.md" beforeDir="false" afterPath="$PROJECT_DIR$/similar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/meituan/duplicateimage/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/meituan/duplicateimage/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/meituan/duplicateimage/apktool/ApkUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/meituan/duplicateimage/apktool/ApkUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -17,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="25" column="73" lean-forward="true" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
+            <state relative-caret-position="630">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,11 +31,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HashCodeUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/utils/HashCodeUtils.java">
+      <file leaf-file-name="File.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/io/File.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+            <state relative-caret-position="304">
+              <caret line="554" column="18" selection-start-line="554" selection-start-column="18" selection-end-line="554" selection-end-column="18" />
+              <folding>
+                <element signature="e#22927#22928#0" expanded="true" />
+                <element signature="e#22966#22967#0" expanded="true" />
+                <element signature="e#75909#75910#0" expanded="true" />
+                <element signature="e#75946#75947#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilenameFilter.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/io/FilenameFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="similar.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/similar.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-327" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApkUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/apktool/ApkUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileUtils.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/libs/apktool.jar!/org/apache/commons/io/FileUtils.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="780">
+              <caret line="62" column="38" lean-forward="true" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -41,8 +86,8 @@
       <file leaf-file-name="FileScanner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/scanner/FileScanner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+            <state relative-caret-position="53">
+              <caret line="20" column="37" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageFile.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ImageFile.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/bean/ImageFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="210">
+              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,8 +110,8 @@
       <file leaf-file-name="pHashComparer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/finder/pHashComparer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            <state relative-caret-position="345">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#242#243#0" expanded="true" />
                 <element signature="e#270#271#0" expanded="true" />
@@ -75,57 +120,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/util/List.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="136" column="43" selection-start-line="136" selection-start-column="33" selection-end-line="136" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Collection.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Collection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MarkdownGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/markdown/MarkdownGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Finder.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/finder/Finder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            <state relative-caret-position="300">
+              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#239#240#0" expanded="true" />
                 <element signature="e#290#291#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/utils/Utils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="35" column="58" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,14 +165,14 @@
         <option value="$PROJECT_DIR$/src/com/meituan/duplicateimage/scanner/FileScanner.java" />
         <option value="$PROJECT_DIR$/DuplicateImages.iml" />
         <option value="$PROJECT_DIR$/src/com/meituan/duplicateimage/bean/Image.java" />
-        <option value="$PROJECT_DIR$/src/com/meituan/duplicateimage/apktool/ApkUtils.java" />
         <option value="$PROJECT_DIR$/src/com/meituan/duplicateimage/utils/Utils.java" />
         <option value="$PROJECT_DIR$/src/com/meituan/duplicateimage/markdown/MarkdownGenerator.java" />
-        <option value="$PROJECT_DIR$/src/com/meituan/duplicateimage/finder/Finder.java" />
-        <option value="$PROJECT_DIR$/src/com/meituan/duplicateimage/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/meituan/duplicateimage/finder/pHashComparer.java" />
         <option value="$PROJECT_DIR$/src/com/meituan/duplicateimage/utils/HashCodeUtils.java" />
         <option value="$PROJECT_DIR$/src/com/meituan/duplicateimage/bean/ImageFile.java" />
+        <option value="$PROJECT_DIR$/src/com/meituan/duplicateimage/finder/pHashComparer.java" />
+        <option value="$PROJECT_DIR$/src/com/meituan/duplicateimage/finder/Finder.java" />
+        <option value="$PROJECT_DIR$/src/com/meituan/duplicateimage/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/meituan/duplicateimage/apktool/ApkUtils.java" />
       </list>
     </option>
   </component>
@@ -298,25 +301,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1443" y="-157" width="1920" height="1057" extended-state="6" />
+    <frame x="1448" y="-157" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32916668" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32916668" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32916668" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.4625" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.55" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32916668" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.46875" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.42917997" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32916668" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.53205127" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4875" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -332,22 +335,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/meituan/duplicateimage/bean/ImageFile.java</url>
-          <line>18</line>
-          <properties />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/meituan/duplicateimage/apktool/ApkUtils.java</url>
-          <line>45</line>
+          <line>56</line>
           <properties />
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="20" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>decodeDir.exists()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>(new File(resFile))</expression-string>
         <language-id>JAVA</language-id>
@@ -388,24 +391,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>apkFile.</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/utils/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -434,6 +422,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12615">
           <caret line="841" column="19" selection-start-line="841" selection-start-column="19" selection-end-line="841" selection-end-column="19" />
+          <folding>
+            <element signature="e#22927#22928#0" expanded="true" />
+            <element signature="e#22966#22967#0" expanded="true" />
+            <element signature="e#75909#75910#0" expanded="true" />
+            <element signature="e#75946#75947#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -668,13 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/apktool.jar!/org/apache/commons/io/FileUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.compiler/javax/tools/FileManagerUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -686,30 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/io/FilenameFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="1165" column="34" selection-start-line="1165" selection-start-column="34" selection-end-line="1165" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/apktool/ApkUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,32 +717,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/finder/Finder.java">
+    <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/utils/HashCodeUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/scanner/FileScanner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/bean/ImageFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="53">
+          <caret line="20" column="37" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -788,8 +736,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/finder/pHashComparer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#242#243#0" expanded="true" />
             <element signature="e#270#271#0" expanded="true" />
@@ -797,17 +745,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/utils/HashCodeUtils.java">
+    <entry file="file://$PROJECT_DIR$/similar.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="22" column="44" lean-forward="true" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        <state relative-caret-position="-327" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/finder/Finder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#290#291#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/io/FilenameFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/apktool.jar!/org/apache/commons/io/FileUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="62" column="38" lean-forward="true" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="25" column="73" lean-forward="true" selection-start-line="25" selection-start-column="73" selection-end-line="25" selection-end-column="73" />
+        <state relative-caret-position="630">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.0.4.jdk/Contents/Home/lib/src.zip!/java.base/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="554" column="18" selection-start-line="554" selection-start-column="18" selection-end-line="554" selection-end-column="18" />
+          <folding>
+            <element signature="e#22927#22928#0" expanded="true" />
+            <element signature="e#22966#22967#0" expanded="true" />
+            <element signature="e#75909#75910#0" expanded="true" />
+            <element signature="e#75946#75947#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/apktool/ApkUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/meituan/duplicateimage/bean/ImageFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -831,7 +836,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited />
+          <last-edited>No facets are configured</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

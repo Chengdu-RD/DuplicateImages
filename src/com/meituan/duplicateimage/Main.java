@@ -3,7 +3,6 @@ package com.meituan.duplicateimage;
 import com.meituan.duplicateimage.apktool.ApkUtils;
 import com.meituan.duplicateimage.bean.ImageFile;
 import com.meituan.duplicateimage.finder.Finder;
-import com.meituan.duplicateimage.finder.SizeComparer;
 import com.meituan.duplicateimage.finder.pHashComparer;
 import com.meituan.duplicateimage.markdown.MarkdownGenerator;
 import com.meituan.duplicateimage.scanner.FileScanner;
@@ -16,14 +15,15 @@ import java.util.Map;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("请输入apk文件路径");
-        String apkDir = Utils.readPath();
-        System.out.println("请输入apk解压目录");
-        String outDir = Utils.readPath();
-        String[] imgPaths = ApkUtils.getApkImagesPath(apkDir, outDir);
+//        System.out.println("请输入apk文件路径");
+//        String apkDir = Utils.readPath();
+//        System.out.println("请输入apk解压目录");
+//        String outDir = Utils.readPath();
+        String[] imgPaths = ApkUtils.getApkImagesPath("/Users/xiayong/Desktop/test/a.apk", "/Users/xiayong/Desktop/test");
+//        String[] imgPaths = {"/Users/xiayong/Desktop/test/a/res/drawable-mdpi-v4"};
         if (imgPaths != null) {
             Finder finder = new Finder();
-            finder.addComparers(new SizeComparer(), new pHashComparer());
+            finder.addComparers(new pHashComparer());
 
             Map<String, List<List<ImageFile>>> allSimilarImgs = new HashMap<>();
             for (String path : imgPaths) {
