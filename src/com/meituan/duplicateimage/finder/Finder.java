@@ -23,13 +23,13 @@ public class Finder {
             return null;
         }
         System.out.println("====================开始查找相似图片======================");
-        List<ImageFile> files = new ArrayList<>();
         List<List<ImageFile>> mResults = new ArrayList<>();
         boolean[] checked = new boolean[images.size()];
         for (int i = 0; i < images.size(); i++) {
             if (checked[i]) {
                 continue;
             }
+            List<ImageFile> files = new ArrayList<>();
             for (int j = i + 1; j < images.size(); j++) {
                 System.out.println("正在处理第" + (i + 1) + "个图片和第" + (j + 1) + "个图片...");
                 if (isSimilarImage(images.get(i), images.get(j))) {
