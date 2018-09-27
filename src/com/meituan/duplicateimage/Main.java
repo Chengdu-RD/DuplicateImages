@@ -16,13 +16,13 @@ import java.util.Map;
 
 public class Main {
 
-    //TODO xiayong 优化——先pHash,然后size，然后color，只要有一个不满足直接跳过后面的检查
     public static void main(String[] args) {
-//        System.out.println("请输入apk文件路径");
-//        String apkDir = Utils.readPath();
-//        System.out.println("请输入apk解压目录");
-//        String outDir = Utils.readPath();
-        String[] imgPaths = ApkUtils.getApkImagesPath("/Users/xiayong/Desktop/test/a.apk", "/Users/xiayong/Desktop/test");
+        System.out.println("请输入apk文件路径");
+        String apkDir = Utils.readPath();
+        System.out.println("请输入apk解压目录");
+        String outDir = Utils.readPath();
+//        String[] imgPaths = ApkUtils.getApkImagesPath("/Users/xiayong/Desktop/test/a.apk", "/Users/xiayong/Desktop/test");
+        String[] imgPaths = ApkUtils.getApkImagesPath(apkDir, outDir);
 //        String[] imgPaths = {"/Users/xiayong/Desktop/test/a/res/drawable-mdpi-v4"};
         if (imgPaths != null) {
             Finder finder = new Finder();
