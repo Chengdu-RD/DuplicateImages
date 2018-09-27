@@ -17,7 +17,7 @@ public class Main {
         String apkDir = Utils.readPath();
         System.out.println("请输入apk解压目录");
         String outDir = Utils.readPath();
-        List<String> imgPathes = ApkUtils.getApkImagesPath(apkDir,outDir);
+        String[] imgPathes = ApkUtils.getApkImagesPath(apkDir,outDir);
 
 //        System.out.println("选择的目录是：" + path);
 //        FileScanner fileScanner = new FileScanner(path);
