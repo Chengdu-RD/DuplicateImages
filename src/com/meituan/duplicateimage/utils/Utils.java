@@ -1,9 +1,8 @@
 package com.meituan.duplicateimage.utils;
 
-import java.io.BufferedReader;
-import java.io.Closeable;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import org.apache.commons.io.FilenameUtils;
+
+import java.io.*;
 
 public class Utils {
 
@@ -25,5 +24,10 @@ public class Utils {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static String getFilenameWithoutExtension(File file){
+        int l = FilenameUtils.indexOfExtension(file.getName());
+        return l == -1 ? "" : file.getName().substring(0,l);
     }
 }
