@@ -1,6 +1,8 @@
 package com.meituan.duplicateimage.finder;
 
 import com.meituan.duplicateimage.bean.ImageFile;
+import com.meituan.duplicateimage.utils.HashCodeUtils;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * pHash比较
@@ -8,6 +10,12 @@ import com.meituan.duplicateimage.bean.ImageFile;
 public class pHashComparer implements ImageComparer {
     @Override
     public boolean isSimilar(ImageFile img1, ImageFile img2) {
+        if (StringUtils.isEmpty(img1.mHash)) {
+            img1.mHash = HashCodeUtils.getInstance().getHash(img1.mFile);
+        }
+        if (StringUtils.isEmpty(img2.mHash)) {
+            img2.mHash = HashCodeUtils.getInstance().getHash(img2.mFile);
+        }
         return distanceChk(img1.mHash, img2.mHash, 0);
     }
 

@@ -1,7 +1,5 @@
 package com.meituan.duplicateimage.bean;
 
-import com.meituan.duplicateimage.utils.HashCodeUtils;
-
 import java.io.File;
 
 /**
@@ -12,8 +10,8 @@ public class ImageFile {
     public File mFile;
     public String mHash;//pHash算法生成的hash值
     public float[] mHistogramData;// TODO xiayong 比较耗内存，是否有优化空间 采用分治之类？
-    public int mHeight;
-    public int mWidth;
+    public int mHeight = -1;
+    public int mWidth = -1;
 
     public ImageFile(final File file) {
         mFile = file;
@@ -21,12 +19,5 @@ public class ImageFile {
             throw new IllegalArgumentException("input file does not exist,please check the path");
         }
         name = mFile.getName();
-        mHash = HashCodeUtils.getInstance().getHash(mFile);
-        mHistogramData = getHistogramData();
-    }
-
-    private float[] getHistogramData() {
-        //TODO xiayong
-        return null;
     }
 }
