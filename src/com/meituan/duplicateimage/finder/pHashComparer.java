@@ -13,7 +13,7 @@ public class pHashComparer implements ImageComparer {
 
     private boolean distanceChk(String hash1, String hash2, int tv) {
         int counter = 0;
-        for (int k = 0; k < hash1.length(); k++) {
+        for (int k = 0; k < hash1.length() && k < hash2.length(); k++) {
             if (hash1.charAt(k) != hash2.charAt(k)) {
                 counter++;
             }
