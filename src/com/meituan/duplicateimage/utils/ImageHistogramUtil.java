@@ -11,15 +11,19 @@ import java.net.URL;
  */
 public class ImageHistogramUtil {
 
-    private int redBins;
-    private int greenBins;
-    private int blueBins;
+    private static int redBins = 4;
+    private static int greenBins = 4;
+    private static int blueBins = 4;
 
-    public ImageHistogramUtil() {
-        redBins = greenBins = blueBins = 4;
+    public static float[] filter(File file) {
+        try {
+            return filter(ImageIO.read(file));
+        } catch (IOException e) {
+            return null;
+        }
     }
 
-    private float[] filter(BufferedImage src) {
+    public static float[] filter(BufferedImage src) {
         int width = src.getWidth();
         int height = src.getHeight();
 
@@ -54,14 +58,14 @@ public class ImageHistogramUtil {
         return histogramData;
     }
 
-    private float getBinIndex(int binCount, int color, int colorMaxValue) {
+    private static float getBinIndex(int binCount, int color, int colorMaxValue) {
         float binIndex = (((float) color) / ((float) colorMaxValue)) * ((float) binCount);
         if (binIndex >= binCount)
             binIndex = binCount - 1;
         return binIndex;
     }
 
-    private int[] getRGB(BufferedImage image, int x, int y, int width, int height, int[] pixels) {
+    private static int[] getRGB(BufferedImage image, int x, int y, int width, int height, int[] pixels) {
         int type = image.getType();
         if (type == BufferedImage.TYPE_INT_ARGB || type == BufferedImage.TYPE_INT_RGB)
             return (int[]) image.getRaster().getDataElements(x, y, width, height, pixels);
@@ -72,26 +76,26 @@ public class ImageHistogramUtil {
      * Bhattacharyya Coefficient
      * http://www.cse.yorku.ca/~kosta/CompVis_Notes/bhattacharyya.pdf
      *
-     * @throws IOException
      * @return 返回值大于等于0.8可以简单判断这两张图片内容一致
+     * @throws IOException
      */
-    public double match(File srcFile, File canFile) throws IOException {
-        float[] sourceData = this.filter(ImageIO.read(srcFile));
-        float[] candidateData = this.filter(ImageIO.read(canFile));
+    public static double match(File srcFile, File canFile) throws IOException {
+        float[] sourceData = filter(ImageIO.read(srcFile));
+        float[] candidateData = filter(ImageIO.read(canFile));
         return calcSimilarity(sourceData, candidateData);
     }
 
     /**
-     * @throws IOException
      * @return 返回值大于等于0.8可以简单判断这两张图片内容一致
+     * @throws IOException
      */
-    public double match(URL srcUrl, URL canUrl) throws IOException {
-        float[] sourceData = this.filter(ImageIO.read(srcUrl));
-        float[] candidateData = this.filter(ImageIO.read(canUrl));
+    public static double match(URL srcUrl, URL canUrl) throws IOException {
+        float[] sourceData = filter(ImageIO.read(srcUrl));
+        float[] candidateData = filter(ImageIO.read(canUrl));
         return calcSimilarity(sourceData, candidateData);
     }
 
-    private double calcSimilarity(float[] sourceData, float[] candidateData) {
+    public static double calcSimilarity(float[] sourceData, float[] candidateData) {
         double[] mixedData = new double[sourceData.length];
         for (int i = 0; i < sourceData.length; i++) {
             mixedData[i] = Math.sqrt(sourceData[i] * candidateData[i]);

@@ -2,6 +2,7 @@ package com.meituan.duplicateimage;
 
 import com.meituan.duplicateimage.apktool.ApkUtils;
 import com.meituan.duplicateimage.bean.ImageFile;
+import com.meituan.duplicateimage.finder.ColorComparer;
 import com.meituan.duplicateimage.finder.Finder;
 import com.meituan.duplicateimage.finder.SizeComparer;
 import com.meituan.duplicateimage.finder.pHashComparer;
@@ -25,7 +26,7 @@ public class Main {
 //        String[] imgPaths = {"/Users/xiayong/Desktop/test/a/res/drawable-mdpi-v4"};
         if (imgPaths != null) {
             Finder finder = new Finder();
-            finder.addComparers(new SizeComparer(),new pHashComparer());
+            finder.addComparers(new SizeComparer(),new pHashComparer(),new ColorComparer());
 
             Map<String, List<List<ImageFile>>> allSimilarImgs = new HashMap<>();
             for (String path : imgPaths) {
