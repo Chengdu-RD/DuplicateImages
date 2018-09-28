@@ -8,15 +8,9 @@
 
 ## 2、效果图
 
-该效果图是基于我们部门真实的项目试验得出的！
+以下的效果图是我们从美团Android安装包里扫描出来的，一共有1000+的重复图片！下面只截取了其中的一部分，如果能把重复图片去掉，相信apk体积会减少不小！
 
-![1](./samples/1.png)
-
-![2](./samples/2.png)
-
-![3](./samples/3.png)
-
-![4](./samples/4.png)
+![1](./samples/1.png)![2](./samples/2.png)![3](./samples/3.png)![4](./samples/4.png)![5](./samples/5.png)![6](./samples/6.png)![7](./samples/7.png)![8](./samples/8.png)![9](./samples/9.png)![10](./samples/10.png)![11](./samples/11.png)![12](./samples/12.png)![13](./samples/13.png)![14](./samples/14.png)![15](./samples/15.png)![16](./samples/16.png)![17](./samples/17.png)![18](./samples/18.png)![19](./samples/19.png)![20](./samples/20.png)![21](./samples/21.png)![22](./samples/22.png)![23](./samples/23.png)![24](./samples/24.png)![25](./samples/25.png)![26](./samples/26.png)![27](./samples/27.png)![28](./samples/28.png)![29](./samples/29.png)![30](./samples/30.png)![31](./samples/31.png)![32](./samples/32.png)![33](./samples/33.png)
 
 ## 3、使用方式
 
@@ -28,7 +22,7 @@
 
 4. 成功运行Main.java后，会在Terminal中让你输入apk的路径和apk反编译的输出路径，例如：
 
-![5](./samples/5.png)
+![5](./samples/xx.png)
 
 5. 点击回车过一会儿便会在项目根目录下生成similar.md文件，记录着该apk中的相似图片。
 
